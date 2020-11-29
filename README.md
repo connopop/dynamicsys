@@ -1,2 +1,2 @@
 # dynamicsys
-DynamicSys is a (fictional) Cloud Computing company
+DynamicSys is a (fictional) Cloud Computing company.
