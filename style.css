@@ -1,5 +1,158 @@
 /* Base Styles -------------------- */
 
-* {
+html {
+    font-size: 1em;
+    line-height: 1.4;
+    box-sizing: border-box;
+    color: black;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
     font-family: 'Playfair Display', serif;  
+    font-weight: normal;
+}
+
+.navigation,
+.header-container,
+.second-content,
+.forth-content,
+.footer {
+    background: darkslateblue;
+    color: whitesmoke;
+}
+
+p {
+    text-align: center;
+    font-weight: lighter;
+}
+
+h2 {
+    font-weight: bolder;
+}
+
+/* Layout Styles ----------------- */
+
+.header-container {
+    text-align: center;
+}
+
+/* Pseudo-classes ----------------- */
+
+a:link {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+a:hover {
+    color: indianred;
+}
+
+a:visited {
+    color: whitesmoke;
+  }
+
+/* Navbar Styles -------------------- */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 0;
+    overflow: hidden;
+  }
+  
+  li a {
+    float: right;
+    display: inline;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+/* Media Queries ------------------ */
+
+@media only screen and (min-width: 480px) {
+
+    nav a {
+      float: left;
+      width: 30%;
+      margin: 0 0 0 5%;
+      padding: 25px 1%;
+      margin-bottom: 0;
+    }
+  
+    nav li:first-child a {
+      margin-left: 0;
+    }
+  
+    nav li:last-child a {
+      margin-right: 0;
+    }
+  
+  }
+  
+  @media only screen and (min-width: 768px),
+         only screen and (min-width: 700px) and (orientation: landscape) {
+  
+    .title {
+      float: left;
+      font-size: 1.4em;
+    }
+  
+    nav {
+      float: right;
+      width: 60%;
+    }
+  
+    nav a {
+      padding: 15px 1%;
+    }
+  
+    .main article {
+      float: left;
+      width: 57%;
+    }
+  
+    .main aside {
+      float: right;
+      width: 38%;
+    }
+    
+  }
+  
+  @media only screen and (min-width: 1140px) {
+  
+    .wrapper {
+      width: 1026px;
+      margin: 0 auto;
+    }
+  
+    .title {
+      font-size: 2em;
+    }
+  
+    nav a {
+      padding: 25px 1%;
+    }
+
+/* Clearfix ------------------ */
+
+    .clearfix:before,
+    .clearfix:after {
+        content: " ";
+        display: table;
+    }
+
+    .clearfix:after {
+        clear: both;
+    }
+
+    .clearfix {
+        *zoom: 1;
+      }
+
 }
