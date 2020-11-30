@@ -37,6 +37,10 @@ h2 {
 
 /* Layout Styles ----------------- */
 
+.title {
+    text-align: center;
+}
+
 .header-container {
     text-align: center;
 }
